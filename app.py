@@ -22,11 +22,11 @@ multi_line = st.selectbox('Is customer avail multiple line', ['No', 'Yes'])
 
 internet_service = st.selectbox('Internet Service Connection', df['InternetService'].unique())
 if internet_service == 'No':
-    online_security = 'No interet service'
-    online_backup = 'No interet service'
-    device_protection = 'No interet service'
-    tech_support = 'No interet service'
-    streaming = 'No interet service'
+    online_security = 'No internet service'
+    online_backup = 'No internet service'
+    device_protection = 'No internet service'
+    tech_support = 'No internet service'
+    streaming = 'No internet service'
 else: 
 
     online_security = st.selectbox('Is online security given to customer', df['OnlineSecurity'].unique())
