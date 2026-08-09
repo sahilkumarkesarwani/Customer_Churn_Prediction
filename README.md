@@ -27,7 +27,7 @@ Customer churn is one of the biggest threats to recurring revenue in subscriptio
 Other notable patterns from the notebook:
 - **Payment method matters:** electronic check payers churn at **45.1%**, versus 15–19% for automatic bank transfer, credit card, or mailed check.
 - **Fiber optic internet customers churn more** (41.8%) than DSL (18.9%) or no-internet customers (7.2%).
-- **Churners pay more on average:** \Rs74.60/month vs. \Rs61.34/month for retained customers.
+- **Churners pay more on average:** \$74.60/month vs. \$61.34/month for retained customers.
 - Six low-signal columns (`gender`, `Partner`, `Dependents`, `PhoneService`, `StreamingTV`, `TotalCharges`) were dropped before modeling based on EDA.
 
 ## Model
