@@ -73,10 +73,3 @@ streamlit run app.py
 ├── Telco-Customer-Churn.csv         # raw dataset
 └── requirements.txt
 ```
-
-## Next Steps
-
-- [ ] Add SHAP-based explainability to the live app (show *why* a prediction was made)
-- [ ] Improve precision on the churn class without giving up too much recall (e.g. threshold tuning)
-- [ ] Support batch predictions via CSV upload
-- [ ] Deploy and link the live demo above
