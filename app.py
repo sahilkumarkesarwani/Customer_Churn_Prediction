@@ -14,7 +14,6 @@ billing = st.selectbox('Enter paperless billing facility', df['PaperlessBilling'
 
 tenure = st.number_input("Enter how many month before customer joined", min_value= 0)
 
-
 mode_of_pay = st.selectbox("Payment option given to customer", df['PaymentMethod'].unique())
 
 senior_citizen = st.selectbox("Is customer a senior citizen", ['No', 'Yes'])
