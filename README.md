@@ -20,11 +20,9 @@ Customer churn is one of the biggest threats to recurring revenue in subscriptio
 
 **Contract type is the single strongest churn driver.** Month-to-month customers churn at **42.6%**, versus 11.3% for one-year and just 2.8% for two-year contracts.
 
-![Churn rate by contract type](images/churn_by_contract.png)
 
 **Churn is heavily front-loaded in the customer lifecycle.** New customers (0–12 months tenure) churn at **47.4%**, dropping steadily to **6.6%** by the 61–72 month mark — retention risk is highest right after signup.
 
-![Churn rate by tenure](images/churn_by_tenure.png)
 
 Other notable patterns from the notebook:
 - **Payment method matters:** electronic check payers churn at **45.1%**, versus 15–19% for automatic bank transfer, credit card, or mailed check.
@@ -75,10 +73,3 @@ streamlit run app.py
 ├── Telco-Customer-Churn.csv         # raw dataset
 └── requirements.txt
 ```
-
-## Next Steps
-
-- [ ] Add SHAP-based explainability to the live app (show *why* a prediction was made)
-- [ ] Improve precision on the churn class without giving up too much recall (e.g. threshold tuning)
-- [ ] Support batch predictions via CSV upload
-- [ ] Deploy and link the live demo above
