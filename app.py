@@ -21,16 +21,23 @@ senior_citizen = st.selectbox("Is customer a senior citizen", ['No', 'Yes'])
 multi_line = st.selectbox('Is customer avail multiple line', ['No', 'Yes'])
 
 internet_service = st.selectbox('Internet Service Connection', df['InternetService'].unique())
+if internet_service == 'No':
+    online_security = 'No interet service'
+    online_backup = 'No interet service'
+    device_protection = 'No interet service'
+    tech_support = 'No interet service'
+    streaming = 'No interet service'
+else: 
 
-online_security = st.selectbox('Is online security given to customer', df['OnlineSecurity'].unique())
+    online_security = st.selectbox('Is online security given to customer', df['OnlineSecurity'].unique())
 
-online_backup = st.selectbox('Is online backup given to customer', df['OnlineBackup'].unique())
+    online_backup = st.selectbox('Is online backup given to customer', df['OnlineBackup'].unique())
 
-device_protection = st.selectbox('Is device protection given to customer', df['DeviceProtection'].unique())
+    device_protection = st.selectbox('Is device protection given to customer', df['DeviceProtection'].unique())
 
-tech_support = st.selectbox('Is tech support given to customer', df['TechSupport'].unique())
+    tech_support = st.selectbox('Is tech support given to customer', df['TechSupport'].unique())
 
-streaming = st.selectbox('Is facility to stream given to customer', df['StreamingMovies'].unique())
+    streaming = st.selectbox('Is facility to stream given to customer', df['StreamingMovies'].unique())
 
 contract = st.selectbox('Conract trem with customer', df['Contract'].unique())
 
